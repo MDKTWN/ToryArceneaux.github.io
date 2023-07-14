@@ -3,16 +3,16 @@ const button = document.querySelector(".preloader-content_button");
 let animInterval;
 let loadInterval;
 
-const videoId = "8KqHCNERjms"
+const videoId = "ffwLcudD124"
 YT.ready(_=>{
     window.player = new YT.Player("player", {
         videoId: videoId,
         playerVars: { "autoplay": 0, "controls": 0, "loop": 1, "playlist": videoId},
         events: {
             "onReady": e => {
-                e.target.setVolume(98);
+                e.target.setVolume(100);
                 clearInterval(loadInterval)
-                button.innerText = "Arceneaux $$$ ;)"
+                button.innerText = "( ͡❛ ͜ʖ ͡❛) Ding Ding Dong"
                 button.classList.add("ready");
                 button.addEventListener("click", () => {
                     animInterval = setInterval(preloaderAnim, 10);
